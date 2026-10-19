@@ -1,0 +1,6 @@
+{
+  "name": "Khalifa Gaming Studio & Lounge",
+  "description": "Premium gaming and entertainment destination in Kanpur featuring VR gaming, professional racing simulators, tournament snooker & pool, esports battlestations, and gourmet lounge dining.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
