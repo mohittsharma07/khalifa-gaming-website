@@ -1,7 +1,11 @@
 import React from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { ChevronDown, ArrowRight, MapPin, Compass } from "lucide-react";
-import { STUDIO_CONFIG, getLoungeOpenStatus } from "../config/studioConfig";
+import {
+  STUDIO_CONFIG,
+  getLoungeOpenStatus,
+} from "../config/studioConfig";
+import heroBackgroundImage from "../assets/images/hero_gaming_lounge_1792425594186.jpg";
 
 interface HeroProps {
   onExplore: () => void;
@@ -32,14 +36,13 @@ export const Hero: React.FC<HeroProps> = ({
       className="relative isolate flex min-h-[92svh] w-full items-center justify-center overflow-hidden bg-[#0b0d13] px-0 pb-20 pt-28 sm:min-h-[92vh] sm:pt-32 lg:min-h-screen lg:pb-24"
       aria-labelledby="hero-heading"
     >
-      {/* Cinematic background — no scale or zoom animation */}
+      {/* Cinematic background */}
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
         <img
-          src="/src/assets/images/hero_gaming_lounge_1792425594186.jpg"
+          src={heroBackgroundImage}
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover object-center"
-          referrerPolicy="no-referrer"
           fetchPriority="high"
         />
 

@@ -8,6 +8,10 @@ import {
 } from "lucide-react";
 import { ImageWithFallback } from "./ImageWithFallback";
 
+import studioExteriorImage from "../assets/images/studio_exterior_entrance_1792425627990.jpg";
+import ps5ConsoleImage from "../assets/images/ps5_console_station_1792425627150.jpg";
+import loungeCafeImage from "../assets/images/lounge_cafe_dining_1792425596502.jpg";
+
 interface AboutProps {
   onPlanVisit: () => void;
 }
@@ -20,13 +24,10 @@ export const About: React.FC<AboutProps> = ({ onPlanVisit }) => {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14 xl:gap-16">
-          {/* Brand narrative */}
           <div className="min-w-0 lg:col-span-6">
             <div className="mb-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-[10px] font-semibold uppercase tracking-widest text-purple-400 sm:text-xs">
               <span>About The Venue</span>
-              <span aria-hidden="true" className="text-slate-600">
-                ·
-              </span>
+              <span aria-hidden="true" className="text-slate-600">·</span>
               <span>Kanpur Destination</span>
             </div>
 
@@ -58,7 +59,6 @@ export const About: React.FC<AboutProps> = ({ onPlanVisit }) => {
               </p>
             </div>
 
-            {/* Venue pillars */}
             <div className="mt-7 grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 sm:mt-8 sm:gap-4">
               <div className="min-w-0 rounded-lg border border-slate-800/80 bg-[#121520] p-4">
                 <div className="mb-2 flex items-center gap-2 text-purple-400">
@@ -113,7 +113,6 @@ export const About: React.FC<AboutProps> = ({ onPlanVisit }) => {
               </div>
             </div>
 
-            {/* Plan visit */}
             <div className="mt-7 sm:mt-8">
               <button
                 type="button"
@@ -126,12 +125,11 @@ export const About: React.FC<AboutProps> = ({ onPlanVisit }) => {
             </div>
           </div>
 
-          {/* Venue image composition */}
           <div className="min-w-0 space-y-3 sm:space-y-4 lg:col-span-6">
             <div className="overflow-hidden rounded-xl border border-slate-800 shadow-xl">
               <div className="h-56 w-full sm:h-72 md:h-80">
                 <ImageWithFallback
-                  src="/src/assets/images/studio_exterior_entrance_1792425627990.jpg"
+                  src={studioExteriorImage}
                   alt="Hospitality lounge entrance concept of Khalifa Gaming Studio & Lounge"
                   className="h-full w-full object-cover object-center"
                   fallbackTitle="Khalifa Lounge Atmosphere"
@@ -143,7 +141,7 @@ export const About: React.FC<AboutProps> = ({ onPlanVisit }) => {
               <div className="min-w-0 overflow-hidden rounded-xl border border-slate-800">
                 <div className="h-36 w-full min-[420px]:h-40 sm:h-44">
                   <ImageWithFallback
-                    src="/src/assets/images/ps5_console_station_1792425627150.jpg"
+                    src={ps5ConsoleImage}
                     alt="Console gaming suites with 4K screens"
                     className="h-full w-full object-cover object-center"
                     fallbackTitle="Console Suite"
@@ -154,7 +152,7 @@ export const About: React.FC<AboutProps> = ({ onPlanVisit }) => {
               <div className="min-w-0 overflow-hidden rounded-xl border border-slate-800">
                 <div className="h-36 w-full min-[420px]:h-40 sm:h-44">
                   <ImageWithFallback
-                    src="/src/assets/images/lounge_cafe_dining_1792425596502.jpg"
+                    src={loungeCafeImage}
                     alt="Dining and refreshment bar within the studio"
                     className="h-full w-full object-cover object-center"
                     fallbackTitle="Lounge Dining"
@@ -163,11 +161,8 @@ export const About: React.FC<AboutProps> = ({ onPlanVisit }) => {
               </div>
             </div>
 
-            {/* Venue transparency note */}
             <div className="rounded-lg border border-slate-800/80 bg-slate-900/60 p-3.5 text-xs leading-relaxed text-slate-400">
-              <span className="font-semibold text-slate-300">
-                Venue Note:
-              </span>{" "}
+              <span className="font-semibold text-slate-300">Venue Note:</span>{" "}
               High-fidelity preview assets showcase the planned interior layout
               and experience zones. Official venue snapshots can be directly
               inserted into{" "}
